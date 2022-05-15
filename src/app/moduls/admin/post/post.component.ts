@@ -70,7 +70,7 @@ export class PostComponent implements OnInit {
     )
     this._data.dataObjectSource.subscribe(response => {
       this.dataEdit = response
-      console.log("respose", this.dataEdit);
+      console.log("respose", this.dataEdit.title);
       this.post = {
         id_user: this.dataEdit.id_user,
         title: this.dataEdit.title,
@@ -78,6 +78,8 @@ export class PostComponent implements OnInit {
         content: this.dataEdit.content,
         image: this.dataEdit.image
       }
+      console.log("oyd",this.post );
+      
 
 
     })
