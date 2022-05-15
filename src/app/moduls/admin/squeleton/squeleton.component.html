@@ -1,0 +1,17 @@
+ <body>
+    <div class="row">
+        <div  id="flex-box"d class="col ">
+           <div  id="card" *ngFor=" let item of post;let i= index" class="card flex-container" style="width: 18rem;">
+               <img class="card-img-top" src="{{env + 'post/image/' + item.image}}" alt="Card image cap">
+               <div class="card-body">
+                 <h5 class="card-title">{{item.title}}</h5>
+                 <p class="card-text">{{item.content}}.</p>
+                 <p class="card-text">{{item.autor}}</p>
+                 <button  (click)="editPost(item)"id="buttoni" type="submit" class="btn btn-warning">Editar</button> 
+               <button (click)="deletePost(item.id)" id="buttoni" type="submit" class="btn btn-danger">Eliminar</button>
+               </div>
+             </div>
+        </div>
+        <div class="col-4"><app-post></app-post></div>
+    </div>
+ </body>

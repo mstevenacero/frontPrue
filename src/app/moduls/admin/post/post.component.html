@@ -1,0 +1,23 @@
+<h2>Ingrese su post</h2>
+<form id="form">
+    <div class="form-group">
+        <label for="">titulo</label>
+        <input [(ngModel)]="post.title" name="title" type="text" class="form-control" id="exampleInputEmail1"
+            placeholder="ingrese titulo">
+    </div>
+    <label for="">Autor</label>
+    <select id="select" [(ngModel)]="post.id_user" class="form-group" name="select" >
+        <option *ngFor=" let item of dataUser;let i= index"  value="{{item.id}}">{{item.name}} {{item.surname}}
+        </option>
+    </select>
+    <div class="form-group">
+        <label for="">contenido</label>
+        <input [(ngModel)]="post.content" name="title" type="text" class="form-control" id="exampleInputPassword1"
+            placeholder="Contenido">
+    </div>
+    <div id="upload">
+        <angular-file-uploader id=button2  [config]="afuConfig" (ApiResponse)="docUpload($event)">
+        </angular-file-uploader>
+    </div>
+    <button (click)="addPost()" id="button" type="submit" class="btn btn-success">Guardar</button>
+</form>

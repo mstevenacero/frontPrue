@@ -1,0 +1,14 @@
+*{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+#form{
+    width: 45vw;
+    margin-top: 4rem;
+    margin-left: 25vw;
+    background: transparent;
+    color: black;
+
+}
+#button{
+    margin-top: 1rem;
+}

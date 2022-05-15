@@ -1,0 +1,20 @@
+*{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+#card{
+    z-index:1;
+    margin-left: 7rem;
+    margin-top:3rem;
+   
+    
+}
+#flex-box{
+    display: flex;
+   max-width:1000px;
+   flex-wrap: wrap;
+}
+body{
+    background-image:url('https://i.pinimg.com/originals/8f/c5/3f/8fc53fc5d0336c5eec2921c0033e33fc.png') ;
+    
+    height: 100vw;
+}
