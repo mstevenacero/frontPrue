@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
 
+IMPORTANTE:
+
+-- CORRER NPM I
+-- CONFIGURAR EL ENVIROMENT DEL PROYECTO POR EL PUERTO QUE ESTE SALIENDO EL BACK PREFERIBLEMNTE QUE EL BACK SALGA POR EL PUERTO DE DEFECTO http://127.0.0.1:8000
+
+-- CORRER NG SERVE
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
